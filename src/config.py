@@ -1,0 +1,4 @@
+GRID_SIZE = 20
+OBSTACLE_PROB = 0.2
+START = (0, 0)
+GOAL = (19, 19)
