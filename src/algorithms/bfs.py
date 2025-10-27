@@ -8,16 +8,13 @@ def bfs(grid, start, goal, visualize_step=None, delay=0.02):
 
     while queue:
         node = queue.popleft()
-
-        # optional live visualization
         if visualize_step:
             visualize_step(visited)
 
-        # goal check
         if node == goal:
-            return parent, visited, True  # ✅ path found
+            return parent, visited, True 
 
-        # explore 4-connected neighbors
+        # exploring the 4-connected neighbors
         for dx, dy in [(1,0), (-1,0), (0,1), (0,-1)]:
             nx, ny = node[0] + dx, node[1] + dy
             if 0 <= nx < len(grid) and 0 <= ny < len(grid[0]) and grid[nx][ny] == 0:
@@ -27,7 +24,6 @@ def bfs(grid, start, goal, visualize_step=None, delay=0.02):
                     parent[neighbor] = node
                     queue.append(neighbor)
 
-        time.sleep(delay)  # control animation speed
+        time.sleep(delay)  
 
-    # if loop finishes without reaching goal
-    return parent, visited, False  # ❌ no path found
+    return parent, visited, False  
