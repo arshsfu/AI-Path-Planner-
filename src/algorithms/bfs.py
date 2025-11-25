@@ -14,7 +14,6 @@ def bfs(grid, start, goal, visualize_step=None, delay=0.02):
         if node == goal:
             return parent, visited, True 
 
-        # exploring the 4-connected neighbors
         for dx, dy in [(1,0), (-1,0), (0,1), (0,-1)]:
             nx, ny = node[0] + dx, node[1] + dy
             if 0 <= nx < len(grid) and 0 <= ny < len(grid[0]) and grid[nx][ny] == 0:
@@ -24,6 +23,6 @@ def bfs(grid, start, goal, visualize_step=None, delay=0.02):
                     parent[neighbor] = node
                     queue.append(neighbor)
 
-        time.sleep(delay)  
+        time.sleep(delay)
 
     return parent, visited, False  
