@@ -2,11 +2,11 @@
 
 An intelligent pathfinding visualization system implementing and comparing classical search algorithms on grid-based environments.
 
-## 🎯 Project Overview
+## Project Overview
 
 NavMind is a comprehensive pathfinding project that implements multiple search algorithms and provides detailed performance analysis and visualization capabilities.
 
-## ✨ Features
+## Features
 
 ### Implemented Algorithms
 - **BFS (Breadth-First Search)** - Uninformed search, guarantees shortest path
@@ -16,19 +16,19 @@ NavMind is a comprehensive pathfinding project that implements multiple search a
   - Euclidean Distance heuristic (straight-line distance)
 
 ### Capabilities
-- ✅ Real-time algorithm visualization
-- ✅ Side-by-side algorithm comparison
-- ✅ Performance metrics tracking
+- Real-time algorithm visualization
+- Side-by-side algorithm comparison
+- Performance metrics tracking
   - Execution time
   - Nodes explored
   - Path length and cost
-- ✅ Performance comparison graphs
-- ✅ Heuristic efficiency analysis
-- ✅ Random grid generation with obstacle control
-- ✅ Grid save/load functionality
-- ✅ Comprehensive logging and reporting
+- Performance comparison graphs
+- Heuristic efficiency analysis
+- Random grid generation with obstacle control
+- Grid save/load functionality
+- Comprehensive logging and reporting
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 AI-Path-Planner/
@@ -55,7 +55,7 @@ AI-Path-Planner/
 └── README.md
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 ```bash
@@ -77,20 +77,20 @@ This will:
 5. Create heuristic efficiency comparison
 6. Save all results to `results/` directory
 
-## 📊 Milestone 2 Deliverables
+## Milestone 2 Deliverables
 
-### ✅ Uniform Cost Search (UCS)
+### Uniform Cost Search (UCS)
 - Priority queue based on path cost (g-value)
 - Guarantees optimal path with non-negative edge costs
 - Implemented in `algorithms/ucs.py`
 
-### ✅ A* Search Algorithm
+### A* Search Algorithm
 - Combines path cost (g) and heuristic estimate (h)
 - f(n) = g(n) + h(n) optimization
 - Support for pluggable heuristic functions
 - Implemented in `algorithms/astar.py`
 
-### ✅ Heuristic Functions
+### Heuristic Functions
 **Manhattan Distance:**
 - `h(n) = |x₁ - x₂| + |y₁ - y₂|`
 - Optimal for 4-connected grids (no diagonal movement)
@@ -103,7 +103,7 @@ This will:
 
 Both implemented in `utils/heuristics.py`
 
-### ✅ Performance Evaluation
+### Performance Evaluation
 Metrics tracked for each algorithm:
 - **Execution time** (milliseconds)
 - **Nodes explored** (efficiency measure)
@@ -111,18 +111,18 @@ Metrics tracked for each algorithm:
 - **Path cost** (total movement cost)
 - **Success rate** (path found or not)
 
-### ✅ Visualization & Analysis
+### Visualization & Analysis
 1. **Side-by-side comparison** - Visual comparison of all algorithms
 2. **Performance bar charts** - Time, nodes, path length comparison
 3. **Heuristic analysis** - Manhattan vs Euclidean efficiency
 
-### ✅ Random Map Generation
+### Random Map Generation
 - Configurable grid size and obstacle density
 - Seeded generation for reproducibility
 - Save/load functionality for grid reuse
 - Ensures start and goal positions are always accessible
 
-## 🔬 Performance Analysis
+## Performance Analysis
 
 ### Expected Results (20×20 grid, 25% obstacles)
 
@@ -154,7 +154,7 @@ Metrics tracked for each algorithm:
    - Both uninformed, but UCS uses priority queue
    - BFS may be faster due to simpler queue operations
 
-## 📝 Usage Examples
+## Usage Examples
 
 ### Basic Algorithm Comparison
 ```python
@@ -197,7 +197,7 @@ results_data = [
 compare_algorithms_visual(grid, start, goal, results_data)
 ```
 
-## 🎓 Academic Context
+## Academic Context
 
 This project demonstrates fundamental AI concepts:
 - **Search Algorithms**: BFS, UCS, A*
@@ -205,7 +205,7 @@ This project demonstrates fundamental AI concepts:
 - **Performance Analysis**: Time/space complexity comparison
 - **Algorithm Optimization**: Informed vs uninformed search
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - Diagonal movement support (8-connected grid)
 - Weighted grids (terrain costs)
@@ -214,15 +214,11 @@ This project demonstrates fundamental AI concepts:
 - Jump Point Search optimization
 - 3D pathfinding extension
 
-## 📄 License
-
-This project is for educational purposes as part of an AI course project.
-
-## 👥 Contributors
+## Contributors
 
 NavMind AI Path Planner - Milestone 2 Implementation
 
 ---
 
 **Last Updated**: November 2025
-**Status**: Milestone 2 Complete ✅
+**Status**: Milestone 2 Complete 
