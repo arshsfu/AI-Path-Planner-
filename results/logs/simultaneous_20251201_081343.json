@@ -1,0 +1,49 @@
+{
+  "timestamp": "2025-12-01T08:13:43.507086",
+  "results": [
+    {
+      "algorithm": "BFS",
+      "heuristic": null,
+      "execution_time": 19.551764488220215,
+      "nodes_explored": 295,
+      "path_length": 39,
+      "path_cost": 38,
+      "path_found": true,
+      "grid_size": 20,
+      "obstacle_density": 0.2475
+    },
+    {
+      "algorithm": "UCS",
+      "heuristic": null,
+      "execution_time": 7.949423313140869,
+      "nodes_explored": 295,
+      "path_length": 39,
+      "path_cost": 38,
+      "path_found": true,
+      "grid_size": 20,
+      "obstacle_density": 0.2475
+    },
+    {
+      "algorithm": "A*",
+      "heuristic": "Manhattan",
+      "execution_time": 3.4379448890686035,
+      "nodes_explored": 133,
+      "path_length": 39,
+      "path_cost": 38,
+      "path_found": true,
+      "grid_size": 20,
+      "obstacle_density": 0.2475
+    },
+    {
+      "algorithm": "A*",
+      "heuristic": "Euclidean",
+      "execution_time": 5.690009593963623,
+      "nodes_explored": 217,
+      "path_length": 39,
+      "path_cost": 38,
+      "path_found": true,
+      "grid_size": 20,
+      "obstacle_density": 0.2475
+    }
+  ]
+}
