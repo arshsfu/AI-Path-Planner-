@@ -31,10 +31,10 @@ class PerformanceMetrics:
         }
     
     def __str__(self):
-        result = f"\n===== {self.algorithm_name}"
+        result = f"\n{self.algorithm_name}"
         if self.heuristic_name:
             result += f" ({self.heuristic_name})"
-        result += " =====\n"
+        result += "\n"
         result += f"Path found: {self.path_found}\n"
         result += f"Execution time: {self.execution_time:.4f} seconds\n"
         result += f"Nodes explored: {self.nodes_explored}\n"

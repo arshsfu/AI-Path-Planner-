@@ -122,14 +122,14 @@ def animate_algorithm(grid, start, goal, algorithm_func, algorithm_name,
     plt.show()
     
     # Print results
-    print(f"\n===== {algorithm_name} RESULTS =====")
+    print(f"\n{algorithm_name} RESULTS")
     print(f"Path found: {found}")
     print(f"Nodes explored: {len(visited)}")
     print(f"Execution time: {execution_time:.2f}s")
     if found:
         print(f"Path length: {len(path)}")
         print(f"Path cost: {len(path) - 1}")
-    print("=" * (len(algorithm_name) + 16) + "\n")
+    print("=" * 50 + "\n")
     
     return parent, visited, found
 
